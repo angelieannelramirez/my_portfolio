@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #f8f1e7;
+  color: #3a1f2b;
+}
+
+header {
+  background: #5b1e2d;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  color: #6b2234;
+  margin-bottom: 40px;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  width: 55%;
+}
+
+.hero h1 {
+  font-size: 55px;
+}
+
+.hero span {
+  color: #8b3048;
+}
+
+.hero h2 {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  color: #5b1e2d;
+}
+
+.hero p {
+  line-height: 1.8;
+}
+
+.buttons {
+  margin-top: 45px;
+}
+
+.btn,
+.btn-outline {
+  padding: 13px 28px;
+  border-radius: 30px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn {
+  background: #7b263a;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #7b263a;
+  color: #7b263a;
+}
+
+/* IMAGE */
+.hero-image {
+  width: 40%;
+  height: 450px;
+  position: relative;
+}
+
+.polaroid {
+  position: absolute;
+  background: white;
+  padding: 15px;
+  padding-bottom: 45px;
+  width: 240px;
+  box-shadow: 0 15px 30px #bbb;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.first {
+  top: 20px;
+  left: 30px;
+  transform: rotate(-10deg);
+}
+
+.second {
+  top: 100px;
+  right: 20px;
+  transform: rotate(8deg);
+}
+
+/* ABOUT */
+.about-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.profile-info ul {
+  list-style: none;
+}
+
+.profile-info li {
+  border-left: 4px solid #6b2234;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.about-description {
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+/* SKILLS */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.project-card {
+  background: white;
+  padding: 30px;
+  margin: 30px auto;
+  display: flex;
+  gap: 30px;
+  border-radius: 20px;
+  max-width: 950px;
+}
+
+.project-card img {
+  width: 320px;
+  border-radius: 15px;
+}
+
+.project-card.no-image {
+  display: block;
+}
+
+/* CERTIFICATIONS */
+.cert-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cert-card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.cert-card h3 {
+  color: #6b2234;
+  margin-bottom: 15px;
+}
+
+.cert-card p {
+  margin-bottom: 10px;
+}
+
+.cert-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #7b263a;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+.contact {
+  background: #6b2234;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: white;
+}
+
+.contact a:hover {
+  color: #e7c6b5;
+}
+
+footer {
+  background: #5b1e2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+}
